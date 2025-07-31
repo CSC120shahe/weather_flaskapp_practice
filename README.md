@@ -3,14 +3,6 @@
 ## Introduction or Background
 A web application that displays weather information for a specified location. The application utilizes the OpenWeatherMap API to retrieve weather data.
 
-## Team Members
-- Sha He (Group Lead)
-- Jaylan Chavis
-- Corey Devolld
-- Anthony De Casas Mata
-- Ryan Burres (withdrew from course)
-- Nicholas E. Pacejka
-
 ## Overview
 This project is a Flask-based web application that allows users to manage their favorite cities' weather information. Users can create accounts, log in, add/remove favorite cities, update city notes, and view detailed weather data. The project also implements comprehensive testing and test coverage to ensure functionality.
 
@@ -40,7 +32,7 @@ This project is a Flask-based web application that allows users to manage their 
 1. Clone the repository:
    ```bash
    git clone https://github.com/csc256/fa24project-fa24project_team2.git
-   cd fa24project-fa24project_team2
+   cd weather_flaskapp_practice
    ```
 
 2. Create and activate a virtual environment:
