@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to the Weather App!</h1>
+<div>
+    <label for="weather-options">Select an option:</label>
+    <select id="weather-options" onchange="location = this.value;">
+        <option value="">-- Choose an option --</option>
+        <option value="{{ url_for('main.weather') }}">Check the weather</option>
+        <option value="{{ url_for('main.weather_favorite_cities') }}">Check the weather of favorite cities</option>
+    </select>
+</div>
+{% endblock %}
+

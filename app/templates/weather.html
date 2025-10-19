@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Weather Information</h1>
+<form method="post">
+    <p>
+        Enter city name: <input type="text" name="city">
+        <input type="submit" value="Get Weather">
+    </p>
+</form>
+
+{% if weather_data %}
+    <h2>Weather in {{ weather_data.name }}</h2>
+    <p>Temperature: {{ weather_data.main.temp }} °C</p>
+    <p>Weather: {{ weather_data.weather[0].description }}</p>
+    <p>Humidity: {{ weather_data.main.humidity }} %</p>
+    <p>Wind Speed: {{ weather_data.wind.speed }} m/s</p>
+{% endif %}
+{% endblock %}
+
